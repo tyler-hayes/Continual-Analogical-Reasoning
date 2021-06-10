@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 PROJ_ROOT=/media/tyler/Data/codes/Continual-Analogical-Reasoning/src/model
 export PYTHONPATH=${PROJ_ROOT}
-source activate base
+source activate continual_analogical_reasoning
 cd ${PROJ_ROOT}/continual_learning
 
 EPOCHS=50
