@@ -86,12 +86,23 @@ To compute the performance metrics from our paper, we have provided the script [
 By setting the appropriate path parameters, this script will compute the Omega, Average Accuracy, Forward Transfer, 
 Backward Transfer, and Total Compute Time metrics from these saved files. Additionally, this script will plot/save the 
 learning curve for all baseline models, as well as the plot of the Partial Replay model Omega performance as a function 
-of the number of replay samples.
-
-![Continual-Analogical-Reasoning-Img2](./images/baselines-learning-curve.png)
+of the number of replay samples (shown below).
 
 The script [gather_offline_results.sh](./src/model/continual_learning/bash_scripts/gather_offline_results.sh) can be 
 used to evaluate offline model performance.
+
+## Results
+
+### Learning curves for each baseline
+![Continual-Analogical-Reasoning-Img2](./images/baselines-learning-curve.png)
+
+### Spider plots comparing baselines across six performance axes
+Overall Performance (Ω), Average Accuracy (A), Remembering (REM), Forward Transfer (FWT), Memory (Mem), and Compute Time (Time). More area inside an entire polygon indicates better performance across axes.
+
+![Continual-Analogical-Reasoning-Img2](./images/baseline-results-spider.png)
+
+### Final accuracy of partial replay selection methods in the unbalanced and balanced settings
+![Continual-Analogical-Reasoning-Img2](./images/partial-replay-results-bar.png)
 
 ## References 
 <a id="1">[1]</a> Chi Zhang, Feng Gao, Baoxiong Jia, Yixin Zhu, and Song-Chun Zhu. Raven: A dataset for relational and analogical
